@@ -1,0 +1,348 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+/*天气和日期*/
+#day{
+    position: fixed;
+    z-index: 9999;
+    background: #fff;
+    border-radius: 20px;
+    right: 20px;
+    top: 20px;
+}
+ul{
+   list-style: none;
+}
+#menu {
+    position: fixed;
+    top: 45%;
+    width: 40px;
+    list-style-type: none;
+    z-index: 70;
+    right: 20px;
+}
+#menu li {
+    width: 40px;
+    right: 0;
+    height: 50%;
+    margin:  0 10px 0 0;
+    font-size: 14px;
+    border-radius:50%;
+
+}
+#menu a {
+    float: left;
+    margin-top:10px;
+    padding: 5px 5px;
+    color: aqua;
+    text-decoration: none;
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    border: 1px solid #fff;
+}
+#menu .active a {
+    background-color: aqua;
+}
+.section {
+    text-align: center;
+    font: 50px "微软雅黑";
+    color: #fff;
+}
+.section1 .bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#MyPic{
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    top: 180px;
+    left: 50px;
+}
+#MyPic img{
+    width: 100%;
+    height: 100%;
+    display: none;
+
+}
+.resume{
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: 999;
+}
+#information{
+    width: 800px;
+    height: 50px;
+    position: absolute;
+    left: 120%;
+    /*right: 0;*/
+    top: 50px;
+    /*left: 0;*/
+    /*margin: 30px auto auto auto;*/
+    margin: 30px auto;
+    overflow: hidden;
+}
+#information div{
+    float: left;
+    font-size: 30px;
+    padding-left: 20px;
+    width: 180px;
+}
+#data{
+    width: 800px;
+    position: absolute;
+    right: 0;
+    top: 125px;
+    left: 0;
+    margin: 30px auto auto auto;
+
+}
+#data ul{
+    width: 800px;
+    height: 50px;
+    margin-top:10px ;
+    background: orange;
+    position: relative;
+    padding-left:20px;
+    border-radius:5px ;
+}
+#data ul li:first-child{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    text-align-last: justify;
+    float: left;
+}
+#data ul li:last-child{
+    width: 600px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    background:rgba(15,5,255,.8);
+    position: absolute;
+    right: 0;
+    text-align: left;
+    text-indent: 2ex;
+ }
+.dataBox{
+    overflow: hidden;
+}
+.dataBox li{
+    top: 100px;
+}
+.section2 p{
+    position: relative; bottom: -120%;
+}
+.section3 p{
+    display: none;
+}
+/*第二屏*/
+.section2{
+    position: relative;
+    background: url("../img/cNIP2T_fw658.gif");
+}
+.csdew{
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.mytext{
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    border-radius:5px;
+    box-shadow: 5px 5px 5px #333333;
+    background-image:-moz-linear-gradient(#dedede,#fff,#dedede);
+    background-image:-webkit-linear-gradient(#dedede,#fff,#dedede);
+    background-image:-ms-linear-gradient(#dedede,#fff,#dedede);
+    background-image:-o-linear-gradient(#dedede,#fff,#dedede);
+    top:20px;
+    left: -600px;
+    overflow: hidden;
+    line-height: 30px;
+}
+.table_box{
+    width: 1200px;
+    height: 600px;
+    margin:0 auto;
+    top: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.small_box{
+    width: 50%;
+    height: 50%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.small_box:nth-child(1){
+    top: -100%;
+    left: -100%;
+    background: url("../img/bg4.jpg")no-repeat center;
+}
+.small_box:nth-child(2){
+    top: -100%;
+    right: -100%;
+    background: url("../img/bg3.jpg")no-repeat center;
+}
+.small_box:nth-child(3){
+    bottom: -100%;
+    left: -100%;
+    background: url("../img/bg2.jpg")no-repeat center;
+}
+.small_box:nth-child(4){
+    bottom: -100%;
+    right: -100%;
+    background: url("../img/bg1.jpg")no-repeat center;
+}
+.mytextTwo{
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    font-size: 25px;
+    color: black;
+    border-radius:5px;
+    box-shadow: 5px 5px 5px #333333;
+    background-image:-o-linear-gradient(#4dfeff,#fff,#4dfeff);
+    background-image:-webkit-linear-gradient(#4dfeff,#fff,#4dfeff);
+    background-image:-moz-linear-gradient(#4dfeff,#fff,#4dfeff);
+    background-image:-ms-linear-gradient(#4dfeff,#fff,#4dfeff);
+    top:5%;
+    left: -50%;
+    overflow: hidden;
+    line-height: 30px;
+}
+.p1{
+    position: relative; bottom: -120%;
+}
+.contentOne{
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #000000;
+    position: relative;
+    top: 20%;
+    text-align: left;
+}
+.contentOne>p{
+    display: none;
+}
+/*第三屏*/
+.section3{
+    background: url("../img/Rcay_fw658.gif")center top;
+    background-repeat:repeat-x;
+
+}
+.projectName{
+    width: 100%;
+    height: 30px;
+    font-size: 30px;
+    line-height: 30px;
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+.Proj{
+    position: absolute;
+    top: 100px;
+    margin: 0 auto;
+    width: 1200px;
+    left: 0;
+    right: 0;
+}
+.projectBox{
+    position: relative;
+    top: 0;
+    width: 1200px;
+    height: 400px;
+    background: rgba(255,255,255,.1);
+    margin: 0 auto;
+}
+.projectBox input {
+    width: 50px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    line-height: 20px;
+    font-size: 20px;
+    color: black;
+    background: white;
+    position: absolute;
+}
+.btn1{
+    left: 30px;
+    top: 200px;
+}
+.btn2{
+    right: 30px;
+    top: 200px;
+}
+.walpBox {
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    right: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.walp{
+    width: 3666px;
+    position: absolute;
+}
+.walp ul{
+    width:990px ;
+    height: 100%;
+    float: left;
+}
+.walp ul li{
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin-right:30px;
+    background: black;
+
+}
+.walp ul li>img{
+    width: 100%;
+    height: 100%;
+}
+hr{
+    position: absolute;
+    bottom: 200px;
+    border: 1px solid #000;
+    width: 100%;
+}
+.foot{
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #000;
+    position: absolute;
+    bottom: 100px;
+    font-size: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
